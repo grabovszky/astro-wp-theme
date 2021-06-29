@@ -1,0 +1,23 @@
+.pagination-item {
+  border: none;
+  border-radius: 100% !important;
+
+  padding: 0.25rem 0.75rem;
+  margin-right: 1rem;
+  margin-left: 1rem;
+
+  color: $color-white-100 !important;
+  background-color: $color-purple-60 !important;
+}
+
+.pagination .current span {
+  background-color: $color-purple-80 !important;
+}
+
+.pagination .next {
+  display: none;
+}
+
+.pagination .prev {
+  display: none;
+}

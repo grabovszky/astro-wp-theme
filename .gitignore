@@ -1,0 +1,25 @@
+### Editors ###
+
+## PhpStorm ##
+
+# all php storm files
+.idea/
+
+### Dependency directories ###
+
+## npm ##
+
+# all node modules
+node_modules/
+
+### Project specific files ###
+
+## built files ##
+
+# whole build directory
+assets/build/
+
+## bundeled files ##
+
+# bundeled theme zip
+astro.zip

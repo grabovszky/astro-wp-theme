@@ -1,0 +1,30 @@
+.carousel-indicator {
+  position: relative;
+  margin-top: 1rem;
+
+  & [data-bs-target] {
+    width: 19px;
+    height: 19px;
+    border-radius: 100%;
+    margin-right: 1rem;
+    margin-left: 1rem;
+    background-color: $color-purple-60 !important;
+    opacity: 1;
+  }
+}
+
+.carousel-indicators .active {
+  background-color: $color-red-100 !important;
+}
+
+.height-cropped {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  max-height: 354px;
+}
+
+.horizontal-divider {
+  height: 2px !important;
+  color: $color-purple-40;
+}

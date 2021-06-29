@@ -1,0 +1,35 @@
+.category-card-header {
+  background-color: $color-purple-40;
+  border: none;
+  border-top-left-radius: 15px !important;
+  border-top-right-radius: 15px !important;
+}
+
+.category-card-list li {
+  list-style-type: none;
+  color: $color-blue-100;
+  font-weight: 500;
+
+  &:before {
+    content: '\2022';
+    font-size: 35px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1.15em;
+    width: 0.8em;
+    color: $color-purple-60;
+    vertical-align: middle;
+  }
+
+  a {
+    text-decoration: none;
+    color: $color-blue-100;
+  }
+}
+
+.category-list-item {
+  border: none;
+  border-bottom-right-radius: 0 !important;
+  border-bottom-left-radius: 0 !important;
+  border-bottom: 1px solid $color-purple-40;
+}

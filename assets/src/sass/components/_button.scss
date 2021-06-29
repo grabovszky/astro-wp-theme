@@ -1,0 +1,70 @@
+.button {
+  @extend .btn;
+  @extend .btn-primary;
+
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+
+  border: none;
+  border-radius: 42px;
+  padding: 0.75rem 1.75rem;
+}
+
+.button-primary {
+  color: $color-white-100;
+  background-color: $color-red-80;
+
+  &:hover {
+    background-color: $color-purple-80;
+  }
+}
+
+.button-secondary {
+  background: none;
+  border: 1px solid $color-purple-80;
+  color: $color-purple-80;
+
+  &:hover {
+    background-color: $color-red-100;
+    color: $color-white-100;
+    border-color: $color-red-100;
+  }
+}
+
+.button-category {
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: none;
+  color: $color-blue-100;
+
+  padding: 0.6rem 2.6rem;
+
+  background-color: $color-white-100;
+
+  &:hover {
+    color: $color-blue-100;
+    background-color: $color-purple-60;
+  }
+}
+
+.button-category-active {
+  color: $color-white-100;
+  background-color: $color-purple-80;
+}
+
+.button-tag {
+  margin-left: 0.6rem;
+  padding: 0.4rem 1rem 0.3rem;
+
+  color: $color-blue-100;
+  font-weight: bold;
+}
+
+.button-tag-primary {
+  background-color: $color-blue-40;
+}
+
+.button-tag-secondary {
+  background-color: $color-white-60;
+}

@@ -1,0 +1,168 @@
+.sidebar-list li {
+  list-style-type: none;
+  color: $color-blue-100;
+  font-weight: bold;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+
+  @media (max-width: 1200px) {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  &:before {
+    content: '\2022';
+    font-size: 35px;
+    font-weight: bold;
+    display: inline-block;
+    line-height: 1.15em;
+    width: 0.8em;
+    color: $color-purple-60;
+    vertical-align: middle;
+
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+  }
+
+  &:hover {
+    &:before {
+      color: $color-purple-100 !important;
+    }
+  }
+}
+
+.list-separated {
+  border-bottom: 1px solid $color-purple-40;
+  margin-bottom: 0.3em;
+}
+
+.current-cat {
+  background-color: $color-purple-40;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+
+  @media (max-width: 1200px) {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+
+  &:before {
+    color: $color-purple-100 !important;
+  }
+}
+
+.sidebar-latest {
+  list-style-type: none;
+}
+
+.sidebar ul li img {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-height: 180px;
+}
+
+.sidebar ul li hr {
+  color: $color-purple-40;
+}
+
+.list-header {
+  color: $color-blue-100;
+  font-weight: bold;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.sidebar ul li h6 {
+  color: $color-blue-100;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.button-purple {
+  text-transform: uppercase;
+  font-size: 0.87rem;
+  font-weight: 500;
+  border-radius: 24px;
+  background: none;
+  border: 1px solid $color-purple-80;
+  color: $color-purple-80;
+  padding: 0.75rem 2.75rem;
+
+  &:hover {
+    background-color: $color-red-100;
+    color: $color-white-100;
+    border-color: $color-red-100;
+  }
+}
+
+.sidebar-2 {
+  padding: 3rem 2.5rem !important;
+
+  @media (max-width: 1200px) {
+    padding: 3rem 1rem !important;
+  }
+}
+
+.widget {
+  @extend .d-flex;
+  @extend .flex-column;
+  @extend .py-4;
+  @extend .content-container;
+  @extend .sidebar;
+
+  margin-bottom: 1.5rem;
+}
+
+.widget_categories {
+  .children {
+    display: none;
+  }
+
+  h3 {
+    display: none;
+  }
+
+  ul {
+    padding-left: 0;
+  }
+
+  li {
+    list-style-type: none;
+    margin-left: 2.5rem;
+    margin-right: 2.5rem;
+
+    @media (max-width: 1200px) {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+
+    a {
+      text-decoration: none;
+      color: $color-blue-100;
+      font-weight: bold;
+    }
+
+    &:before {
+      content: '\2022';
+      font-size: 35px;
+      font-weight: bold;
+      display: inline-block;
+      line-height: 1.15em;
+      width: 0.8em;
+      color: $color-purple-60;
+      vertical-align: middle;
+
+      transition-duration: 0.3s;
+      transition-timing-function: ease;
+    }
+
+    &:hover {
+      &:before {
+        color: $color-purple-100 !important;
+      }
+    }
+  }
+}

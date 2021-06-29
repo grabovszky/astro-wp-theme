@@ -1,0 +1,74 @@
+body {
+  font-family: 'Roboto', Arial, Helvetica, sans-serif;
+}
+
+.text-h1 {
+  font-weight: bold;
+
+  font-size: calc(1.05rem + 1.5vw);
+
+  @media (min-width: 1200px) {
+    font-size: 2.2rem;
+  }
+}
+
+.text-h2 {
+  font-weight: bold;
+
+  font-size: calc(1rem + 0.6vw);
+
+  @media (min-width: 1200px) {
+    font-size: 1.5rem;
+  }
+}
+
+.text-h3 {
+  font-size: calc(1rem + 0.4vw);
+
+  @media (min-width: 1200px) {
+    font-size: 1.7rem;
+  }
+}
+
+.text-h4 {
+  font-size: calc(0.9rem + 0.2vw);
+
+  @media (min-width: 1200px) {
+    font-size: 1.4rem;
+  }
+}
+
+.text-regular {
+  font-weight: normal;
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+}
+
+.text-medium {
+  font-weight: 500;
+}
+
+.text-blue {
+  color: $color-blue-100;
+}
+
+.text-blue-subtle {
+  color: $color-blue-60;
+}
+
+.text-purple-subtle {
+  color: $color-purple-40;
+}
+
+.text-white {
+  color: $color-white-100;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-italic {
+  font-weight: 300;
+  font-style: italic;
+}

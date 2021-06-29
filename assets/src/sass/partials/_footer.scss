@@ -1,0 +1,83 @@
+.astro-footer {
+  background-color: $color-purple-100;
+}
+
+.footer-text-subtle {
+  color: $color-purple-40;
+  font-size: 16px;
+}
+
+.footer-header {
+  color: $color-purple-60;
+  text-transform: uppercase;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.footer-text {
+  color: $color-white-100;
+  font-size: 16px;
+}
+
+.footer-strong {
+  text-decoration: none;
+  color: $color-purple-40;
+  font-weight: 500;
+}
+
+.footer-divider {
+  border: 1px solid $color-purple-60;
+}
+
+.astro-bg-dark {
+  background-color: $color-white-60;
+}
+
+.newsletter-field {
+  position: relative;
+}
+
+.newsletter-input {
+  width: 100%;
+  border: none;
+  border-radius: 38px;
+  padding: 1.3rem 14px 1.3rem 42px;
+  outline: none;
+  color: #474aaf;
+  font-size: 18px;
+
+  &:focus {
+    color: #474aaf;
+  }
+}
+
+.newsletter-button {
+  position: absolute;
+  right: 14px;
+  top: 15%;
+  bottom: 15%;
+  border: none;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 500;
+  background-color: $color-red-80;
+  border-radius: 42px;
+  z-index: 2;
+  padding-right: 1.7rem;
+  padding-left: 1.7rem;
+
+  &:hover {
+    background-color: $color-blue-100;
+  }
+}
+
+.newsletter-heading {
+  color: $color-blue-100;
+  font-weight: 700;
+}
+
+.newsletter-text {
+  color: #515392;
+  font-weight: 500;
+}
