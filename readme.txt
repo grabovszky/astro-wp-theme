@@ -1,6 +1,6 @@
 === Astro ===
 
-Contributors: Gábor Kristóf & the Rackhost team
+Contributors: Gábor Kristóf
 Tags: blog, two-columns, left-sidebar, accessibility-ready, custom-background, custom-header, custom-logo, custom-menu, featured-images, footer-widgets, theme-options, translation-ready
 
 Requires as least: 5.7
@@ -9,12 +9,12 @@ Requires PHP: 7.4
 
 Stable tag: 1.0.0
 
-License: .php files are licensed under GNU General Public License v3 or later, files under /assets is Copyright (C)2021 Rackhost Ltd.
+License: .php files are licensed under GNU General Public License v3 or later, files under /assets is Copyright (C)2021 Kristóf Gábor.
 License URI: LICENSE
 
 == Description ==
 
-Astro is a custom WordPress theme for Rackhost knowledge base.
+Astro is a custom WordPress theme for wiki pages.
 
 == Installation ==
 

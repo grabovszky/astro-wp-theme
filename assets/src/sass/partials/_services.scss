@@ -1,0 +1,36 @@
+.service-card {
+  transition: all 0.3s ease;
+  background: none;
+  border: none;
+  border-radius: 1.25rem;
+
+  color: $color-blue-100;
+
+  h2 {
+    @include fluid-font-size(25px, 32px);
+  }
+
+  strong {
+    @include fluid-font-size(20px, 28px);
+  }
+
+  hr {
+    margin-top: 0;
+  }
+
+  .button-secondary {
+    padding-right: 3.75rem;
+    padding-left: 3.75rem;
+  }
+
+  &:hover {
+    @extend .shadow-lg;
+    background-color: $color-white-100;
+
+    .button-secondary {
+      background-color: $color-red-100;
+      color: $color-white-100;
+      border-color: $color-red-100;
+    }
+  }
+}

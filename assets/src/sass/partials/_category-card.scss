@@ -33,3 +33,22 @@
   border-bottom-left-radius: 0 !important;
   border-bottom: 1px solid $color-purple-40;
 }
+
+.special-category-list-item {
+  border: none;
+  cursor: pointer;
+}
+
+.special-category-tags {
+
+  button {
+    padding-right: 1.5rem;
+    padding-left: 1.5rem;
+    margin-right: 0.5rem;
+  }
+}
+
+.card-footer {
+  background: transparent;
+  border-top: 0;
+}

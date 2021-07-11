@@ -10,7 +10,7 @@
 get_header();
 ?>
 
-    <div id="primary" class="container-fluid astro-bg-light">
+    <div id="primary" class="container-fluid astro-bg-light pb-5">
         <div class="container-xxl d-flex py-4">
             <?php get_sidebar(); ?>
             <main id="main" class="site-main" role="main">

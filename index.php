@@ -14,7 +14,7 @@
 get_header();
 ?>
 
-    <div class="container-fluid astro-bg-light" id="primary">
+    <div class="container-fluid astro-bg-light pb-5" id="primary">
         <div class="container-xxl d-flex py-4">
             <?php get_sidebar(); ?>
             <main id="main" class="site-main" role="main">

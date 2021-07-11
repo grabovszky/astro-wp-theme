@@ -15,69 +15,63 @@
   margin-bottom: 1.5rem;
 }
 
-.footer-text {
-  color: $color-white-100;
-  font-size: 16px;
-}
-
-.footer-strong {
-  text-decoration: none;
-  color: $color-purple-40;
-  font-weight: 500;
-}
-
 .footer-divider {
   border: 1px solid $color-purple-60;
 }
 
-.astro-bg-dark {
-  background-color: $color-white-60;
-}
+.footer-text {
+  color: $color-white-100;
+  font-size: 16px;
 
-.newsletter-field {
-  position: relative;
-}
+  strong {
+    color: $color-purple-40;
+    font-weight: 500;
+  }
 
-.newsletter-input {
-  width: 100%;
-  border: none;
-  border-radius: 38px;
-  padding: 1.3rem 14px 1.3rem 42px;
-  outline: none;
-  color: #474aaf;
-  font-size: 18px;
+  a {
+    text-decoration: none;
+    color: $color-white-100;
 
-  &:focus {
-    color: #474aaf;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+
+    &:hover {
+      color: $color-white-60;
+    }
   }
 }
 
-.newsletter-button {
-  position: absolute;
-  right: 14px;
-  top: 15%;
-  bottom: 15%;
-  border: none;
-  text-transform: uppercase;
-  font-size: 14px;
-  font-weight: 500;
-  background-color: $color-red-80;
-  border-radius: 42px;
-  z-index: 2;
-  padding-right: 1.7rem;
-  padding-left: 1.7rem;
+.footer-item {
+  list-style-type: none;
 
-  &:hover {
-    background-color: $color-blue-100;
+  a {
+    text-decoration: none;
+    font-size: 16px;
+    color: $color-white-100;
+
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+
+    &:hover {
+      color: $color-white-60;
+    }
   }
 }
 
-.newsletter-heading {
-  color: $color-blue-100;
-  font-weight: 700;
-}
+.footer-copyright {
+  @extend .footer-text-subtle;
+  font-size: 13px;
 
-.newsletter-text {
-  color: #515392;
-  font-weight: 500;
+  a {
+    text-decoration: none;
+    color: $color-purple-40;
+    font-weight: 500;
+
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }

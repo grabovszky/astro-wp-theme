@@ -22,4 +22,4 @@ to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 - `package.json`, `package-lock.json` for pulling dependencies
 - `main.js`, `webpack.common.js`, `webpack.dev.js`, `webpack.prod.js` for webpack configuration
 
-[0.0.1]: https://gitlab.rackhost.hu/rackhost/wp-tudasbazis/
+[0.0.1]: https://github.com/grabovszky/astro-wp-theme

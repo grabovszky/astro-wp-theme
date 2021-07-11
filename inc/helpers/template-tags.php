@@ -11,7 +11,7 @@
  * Modifies the base excerpt function of WordPress by trimming a specific
  * character count
  */
-function astro_the_excerpt($trim_character_count = 0)
+function astro_the_excerpt($trim_character_count = 300)
 {
     if ($trim_character_count === 0 || has_excerpt()) {
         the_excerpt();
@@ -52,6 +52,7 @@ function astro_taxonomy_pagination()
     ];
 
     $args = [
+        'prev_next'          => false,
         'before_page_number' => '<span class="btn pagination-item">',
         'after_page_number'  => '</span>',
     ];
@@ -71,15 +72,24 @@ function astro_get_the_tags()
 
     if ($tags) {
         foreach ($tags as $tag) {
-            $primary_tag = get_field('primary_tag', $tag->taxonomy . '_' . $tag->term_id);
-
-            if ( ! $primary_tag) {
-                echo '<span class="badge rounded-pill button-tag button-tag-primary">' . $tag->name . '</span>';
-            } else {
-                echo '<span class="badge rounded-pill button-tag button-tag-secondary">' . $tag->name . '</span>';
+            if ($tag->term_id === get_term_by('slug', 'szakertoi_cikk', 'post_tag')->term_id) {
+                continue;
             }
+
+            $category_tag = get_field('category_tag', $tag->taxonomy . '_' . $tag->term_id);
+
+            display_tag($tag, ! $category_tag);
         }
     }
+}
+
+function display_tag($tag, $primary)
+{
+    $classes = 'class="badge rounded-pill button-tag button-tag-' . ($primary ? 'primary"' : 'secondary"');
+    $link    = 'onclick="location.href=\'' . get_tag_link($tag->term_id) . '\'"';
+    $name    = $tag->name;
+
+    echo '<span ' . $classes . ' ' . $link . '>' . $name . '</span>';
 }
 
 /**
@@ -96,7 +106,7 @@ add_filter(
         } elseif (is_author()) {
             $title = '<span class="vcard">' . get_the_author() . '</span>';
         } elseif (is_tax()) { //for custom post types
-            $title = sprintf(__('%1$s'), single_term_title('', false));
+            $title = sprintf(__('%1$s', 'astro'), single_term_title('', false));
         } elseif (is_post_type_archive()) {
             $title = post_type_archive_title('', false);
         }

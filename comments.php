@@ -14,7 +14,5 @@ if (post_password_required()) {
 }
 
 if (comments_open()) {
-    ?>
-    <img src="<?php echo IMG_URI . '/disqus.png' ?>" alt="image" class="img-fluid w-100 my-4">
-    <?php
+    // disqus hook
 }

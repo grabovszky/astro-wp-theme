@@ -1,0 +1,42 @@
+.form-input-box {
+
+  position: relative;
+
+  & input {
+    width: 100%;
+    border: none;
+    border-radius: 38px;
+    padding: 1.3rem 14px 1.3rem 42px;
+    outline: none;
+    @extend .text-blue-lighter;
+    @extend .text-bigger;
+
+    transition-duration: 0.3s;
+    transition-timing-function: ease;
+
+    &::placeholder {
+      @extend .text-blue-lighter;
+      @extend .text-bigger;
+    }
+
+    &:hover {
+      @extend .shadow;
+    }
+
+    &:focus {
+      @extend .text-blue-lighter;
+      @extend .shadow-lg;
+    }
+  }
+
+  & button {
+    @extend .button;
+    @extend .button-primary;
+
+    position: absolute;
+    right: 14px;
+    top: 16%;
+    bottom: 16%;
+    z-index: 2;
+  }
+}

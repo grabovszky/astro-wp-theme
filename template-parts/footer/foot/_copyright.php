@@ -5,7 +5,15 @@
  * @package Astro
  */
 
-//TODO update for dynamic data loading
 ?>
 
-<div class="col text-center footer-text-subtle">&copy 2021 Rackhost Zrt.</div>
+<div class="col text-center footer-copyright">
+    <span id="footer-copyright">
+        <?php echo
+            '&copy ' .
+            date('Y') . ' ' .
+            get_bloginfo('name') . ' ' .
+            esc_html__('Ltd.', 'astro');
+        ?>
+    </span>
+</div>

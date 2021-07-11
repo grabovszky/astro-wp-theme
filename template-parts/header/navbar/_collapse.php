@@ -13,6 +13,11 @@
         data-bs-target="#main-menu"
         aria-controls="main-menu"
         aria-expanded="false"
-        aria-label="Toggle navigation">
-    <span class="navbar-toggler-icon"></span>
+        aria-label="<?php echo esc_attr__('Toggle navigation', 'astro'); ?>">
+    <label class="navbar-hamburger-icon" for="check">
+        <input type="checkbox" id="check"/>
+        <span></span>
+        <span></span>
+        <span></span>
+    </label>
 </button>

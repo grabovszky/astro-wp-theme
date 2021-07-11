@@ -15,5 +15,18 @@ $color-blue-60: hsla(238, 29%, 45%, 1); // #515392 - Onion Skin Blue
 $color-blue-40: hsla(208, 100%, 82%, 1); // #a2d4ff - Baby Blue
 
 $color-white-100: hsla(0, 0%, 100%, 1); // #fff - White
-$color-white-80: hsla(272, 26%, 89%, 0.51); // #e3dbea82 - Awakened
+$color-white-80: hsla(272, 26%, 89%, 0.51); // #e3dbea82 - Awakened lite
 $color-white-60: hsla(272, 26%, 89%, 1); // #e3dbea - Awakened
+
+/*--------------------------------------------------------------
+# Custom sizes
+--------------------------------------------------------------*/
+$size-xg: 35px;
+$size-g: 30px;
+$size-xxl: 25px;
+$size-xl: 20px;
+$size-l: 18px;
+$size-m: 16px;
+$size-s: 15px;
+$size-xs: 14px;
+$size-xxs: 13px;

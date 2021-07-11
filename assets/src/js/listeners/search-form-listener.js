@@ -8,8 +8,8 @@
 jQuery(document).on('click', function(e) {
   let target = e.target;
 
-  if (!jQuery(target).is('#searchInput') &&
-      !jQuery(target).parents().is('#searchInput')) {
-    jQuery('#searchInput').trigger('reset');
+  if (!jQuery(target).is('#searchform') &&
+      !jQuery(target).parents().is('#searchform')) {
+    jQuery('#searchform').trigger('reset');
   }
 });

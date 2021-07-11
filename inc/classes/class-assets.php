@@ -27,6 +27,7 @@ class Assets
     {
         add_action('wp_enqueue_scripts', [$this, 'register_styles']);
         add_action('wp_enqueue_scripts', [$this, 'register_scripts']);
+        load_theme_textdomain('astro', get_template_directory() . '/languages');
     }
 
     /**

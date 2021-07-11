@@ -3,17 +3,16 @@ body {
 }
 
 .text-h1 {
-  font-weight: bold;
+  font-weight: 700;
+  @include fluid-font-size($size-xl, $size-xg);
+}
 
-  font-size: calc(1.05rem + 1.5vw);
-
-  @media (min-width: 1200px) {
-    font-size: 2.2rem;
-  }
+.text-bigger {
+  @include fluid-font-size($size-s, $size-l);
 }
 
 .text-h2 {
-  font-weight: bold;
+  font-weight: 700;
 
   font-size: calc(1rem + 0.6vw);
 
@@ -46,22 +45,6 @@ body {
 
 .text-medium {
   font-weight: 500;
-}
-
-.text-blue {
-  color: $color-blue-100;
-}
-
-.text-blue-subtle {
-  color: $color-blue-60;
-}
-
-.text-purple-subtle {
-  color: $color-purple-40;
-}
-
-.text-white {
-  color: $color-white-100;
 }
 
 .text-bold {

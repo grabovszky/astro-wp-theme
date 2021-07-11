@@ -1,8 +1,8 @@
 {
   "name": "astro",
   "version": "1.0.0",
-  "description": "Astro is a custom WordPress theme for Rackhost knowledge base.",
-  "author": "Gábor Kristóf & the Rackhost team",
+  "description": "Astro is a custom WordPress theme for wiki pages.",
+  "author": "Gábor Kristó",
   "license": "proprietary license",
   "private": true,
   "main": "src/js/main.js",
@@ -13,13 +13,13 @@
     "sass",
     "webpack"
   ],
-  "homepage": "https://www.rackhost.hu/tudásbázis",
+  "homepage": "https://github.com/grabovszky/astro-wp-theme",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.rackhost.hu/rackhost/wp-tudasbazis.git"
+    "url": "git+https://github.com/grabovszky/astro-wp-theme.git"
   },
   "bugs": {
-    "url": "https://gitlab.rackhost.hu/rackhost/wp-tudasbazis/issues"
+    "url": "https://github.com/grabovszky/astro-wp-theme/issues"
   },
   "browserslist": [
     "defaults"
@@ -52,7 +52,9 @@
   "scripts": {
     "prod": "cross-env NODE_ENV=production webpack --config webpack.prod.js --mode production --progress",
     "dev": "cross-env NODE_ENV=development webpack --config webpack.dev.js --watch --mode development --progress",
-    "bundle": "npm run prod && dir-archiver --src ../ --dest ../astro.zip --exclude node_modules src LICENSE.md package.json package-lock.json webpack.common.js webpack.dev.js webpack.prod.js .babelrc ../.git ../.idea ../README.md ../CHANGELOG.md ../.gitignore ../astro.zip",
-    "clean": "rm -rf build/*"
+    "bundle": "npm run prod && dir-archiver --src ../../astro --dest ../astro.zip --exclude node_modules src package.json package-lock.json webpack.common.js webpack.dev.js webpack.prod.js .babelrc ../.git ../.idea ../docs ../README.md ../CHANGELOG.md ../.gitignore ../astro.zip",
+    "clean": "rm -rf build/*",
+    "translations": "wp i18n make-pot ..",
+    "build-translations": "msgfmt -o ../languages/hu_HU.mo ../languages/hu_HU.po"
   }
 }

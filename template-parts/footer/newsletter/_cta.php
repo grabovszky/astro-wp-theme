@@ -5,10 +5,12 @@
  * @package Astro
  */
 
-//TODO change to dynamically load data
 ?>
 
 <div class="col-md-3 my-auto">
-    <h3 class="newsletter-heading">Rackhost hírlevél</h3>
-    <p class="newsletter-text">Iratkozz fel és értesülj elsőként a Tudásbázis legfrisebb cikkeiről.</p>
+    <h2 class="text-h1 text-blue"><?php echo get_bloginfo('name') . esc_html__(' newsletter', 'astro'); ?></h2>
+    <p class="text-bigger text-medium text-blue-light"><?php echo esc_html__(
+            'Sign up and we\'ll notify you about our latest articles.',
+            'astro'
+        ); ?></p>
 </div>

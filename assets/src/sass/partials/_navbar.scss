@@ -1,38 +1,90 @@
-.astro-nav {
-  margin-top: 5px;
-  margin-bottom: 5px;
+.nav-separator {
+  border-right: 1px solid $color-purple-40;
+  margin-right: 0.25rem;
+  margin-left: 0.25rem;
 }
 
-.astro-nav-brand {
-  transition: transform 0.5s;
+.nav-link {
+  span:not(.nav-separator) {
+    position: relative;
+    font-weight: bold;
+    font-size: 1rem;
+    color: $color-blue-100;
 
-  &:hover {
-    transform: scale(0.98);
+    transition-duration: 0.5s;
+    transition-timing-function: ease;
+
+    &::after {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      height: 2px;
+      background: $color-purple-60;
+      content: '';
+      opacity: 0;
+      transition: opacity 0.3s, transform 0.3s;
+      transform: translateY(10px);
+    }
+
+    &:hover::after {
+      opacity: 1;
+      transform: translateY(0px);
+    }
   }
 }
 
-.astro-nav-text {
-  font-weight: bold;
-  font-size: 16px;
-  color: $color-blue-100;
+.navbar-toggler {
+  border: none;
+
+  &:focus {
+    box-shadow: none;
+  }
 }
 
-.astro-nav-separator {
-  border-right: 1px solid $color-purple-40;
-  margin-right: 5px;
-  margin-left: 5px;
-}
+.navbar-hamburger-icon {
+  display: flex;
+  flex-direction: column;
+  width: 25px;
+  cursor: pointer;
 
-.astro-nav-hover {
-  text-decoration: none;
-  background-image: linear-gradient($color-white-100, $color-white-100),
-  linear-gradient(to right, $color-red-80, $color-blue-100);
-  background-size: 100% 2px, 0 2px;
-  background-position: 100% 100%, 0 100%;
-  background-repeat: no-repeat;
-  transition: background-size 0.75s ease;
+  span {
+    background: $color-blue-100;
+    border-radius: 5px;
+    height: 3px;
+    margin: 3px 0;
+    transition: .4s cubic-bezier(0.68, -0.6, 0.32, 1.6);
 
-  &:hover {
-    background-size: 0 2px, 100% 2px;
+    &:nth-of-type(1) {
+      width: 50%;
+    }
+
+    &:nth-of-type(2) {
+      width: 100%;
+    }
+
+    &:nth-of-type(3) {
+      width: 75%;
+    }
+  }
+
+  input[type='checkbox'] {
+    display: none;
+
+    &:checked ~ span:nth-of-type(1) {
+      transform-origin: bottom;
+      transform: rotatez(45deg) translate(4px, 1px);
+    }
+
+    &:checked ~ span:nth-of-type(2) {
+      transform-origin: top;
+      transform: rotatez(-45deg)
+    }
+
+    &:checked ~ span:nth-of-type(3) {
+      transform-origin: bottom;
+      width: 50%;
+      transform: translate(11px, -5.5px) rotatez(45deg);
+    }
   }
 }

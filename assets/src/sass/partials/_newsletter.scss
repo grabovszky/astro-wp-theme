@@ -1,0 +1,17 @@
+.newsletter-container {
+  position: relative;
+
+  .newsletter-illustration {
+    position: absolute;
+    bottom: 35px;
+    right: 0;
+  }
+}
+
+.illustration-hidden {
+  opacity: 0;
+}
+
+.slanted-bg {
+  background: linear-gradient(110deg, $color-white-60 77%, $color-purple-60 23%);
+}

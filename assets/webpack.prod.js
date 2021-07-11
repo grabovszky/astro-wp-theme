@@ -83,6 +83,7 @@ module.exports = merge(common, {
         SRC_DIR + '/template-parts/*.php',
         SRC_DIR + '/template-parts/**/*.php',
         SRC_DIR + '/inc/**/*.php',
+        SRC_DIR + '/assets/src/js/listeners/*.js',
       ]),
     }),
   ],

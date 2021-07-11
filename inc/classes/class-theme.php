@@ -11,6 +11,7 @@
 namespace Astro\Inc;
 
 use Astro\Inc\Traits\Singleton;
+use Astro\Inc\Tag_Widget;
 
 class Theme
 {
@@ -24,8 +25,8 @@ class Theme
         // Load classes
         Assets::get_instance();
         Menus::get_instance();
-//        Meta_Boxes::get_instance();
-//        Tag_Widget::get_instance();
+        Tag_Widget::get_instance();
+        Latest_Widget::get_instance();
         Sidebars::get_instance();
 
         $this->set_hooks();
@@ -34,6 +35,18 @@ class Theme
     protected function set_hooks(): void
     {
         add_action('after_setup_theme', [$this, 'setup_theme']);
+        add_action(
+            'widgets_init',
+            function () {
+                register_widget(Tag_Widget::class);
+            }
+        );
+        add_action(
+            'widgets_init',
+            function () {
+                register_widget(Latest_Widget::class);
+            }
+        );
     }
 
     /**

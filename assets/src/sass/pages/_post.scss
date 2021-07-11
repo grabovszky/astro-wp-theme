@@ -62,3 +62,37 @@
     height: auto !important;
   }
 }
+
+.special-post-container {
+  padding: 2.5rem 0;
+
+  .post-back {
+    padding-bottom: 2rem;
+    margin-bottom: 0;
+    border: none;
+  }
+
+  & > div:not(.special-post-header) {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+}
+
+.special-post-header {
+  height: 354px;
+  width: 100%;
+
+  .special-post-header-content {
+    padding-right: 2.5rem;
+    padding-left: 2.5rem;
+  }
+
+  .special-post-author span {
+    color: $color-white-100 !important;
+  }
+
+  .button-tag {
+    margin-left: 0;
+    margin-right: 0.6rem;
+  }
+}

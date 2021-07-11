@@ -12,7 +12,7 @@
     the_content(
         sprintf(
             wp_kses(
-                __('Continue reading<span class="screen-reader-text"> "%s"</span>', '_s'),
+                __('Continue reading<span class="screen-reader-text"> "%s"</span>', 'astro'),
                 [
                     'span' => [
                         'class' => [],
@@ -25,7 +25,7 @@
 
     wp_link_pages(
         [
-            'before' => '<div class="page-links">' . esc_html__('Pages:', '_s'),
+            'before' => '<div class="page-links">' . esc_html__('Pages:', 'astro'),
             'after'  => '</div>',
         ]
     );

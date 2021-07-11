@@ -1,14 +1,14 @@
-.list {
+ul {
   padding-left: 1rem;
 }
 
-.list li {
+li:not(.nav-item, .category-list-item, .footer-item, .latest-post-item) {
   list-style-type: none;
   color: $color-blue-100;
   font-weight: 500;
 
   &:before {
-    content: '\2022';
+    content: '•';
     font-size: 35px;
     font-weight: bold;
     display: inline-block;
@@ -26,9 +26,13 @@
       color: $color-purple-100 !important;
     }
   }
-}
 
-.list li a {
-  text-decoration: none;
-  color: $color-blue-100;
+  a {
+    text-decoration: none;
+    color: $color-blue-100;
+
+    &:hover {
+      color: $color-blue-100;
+    }
+  }
 }

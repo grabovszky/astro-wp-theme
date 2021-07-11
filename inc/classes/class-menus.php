@@ -33,6 +33,12 @@ class Menus
                 'header-menu' => esc_html__('Header Menu', 'astro'),
             ]
         );
+
+        register_nav_menus(
+            [
+                'footer-menu' => esc_html__('Footer Menu', 'astro'),
+            ]
+        );
     }
 
     /**

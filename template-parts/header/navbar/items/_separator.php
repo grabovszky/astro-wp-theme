@@ -8,7 +8,7 @@
 ?>
 
 <li class="nav-item d-none d-lg-block">
-    <a class="nav-link" href="#">
-        <span class="astro-nav-separator"></span>
+    <a class="nav-link">
+        <span class="nav-separator"></span>
     </a>
 </li>

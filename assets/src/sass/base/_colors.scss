@@ -1,3 +1,39 @@
 .astro-bg-light {
   background-color: $color-white-80;
 }
+
+.astro-bg-dark {
+  background-color: $color-white-60;
+}
+
+.background-light {
+  background-color: $color-white-60;
+}
+
+.text-blue {
+  color: $color-blue-100;
+}
+
+.text-blue-lighter {
+  color: $color-blue-80;
+}
+
+.text-blue-light {
+  color: $color-blue-60;
+}
+
+.text-blue-subtle {
+  color: $color-blue-60;
+}
+
+.text-purple-subtle {
+  color: $color-purple-40;
+}
+
+.text-red {
+  color: $color-red-100;
+}
+
+.text-white {
+  color: $color-white-100;
+}

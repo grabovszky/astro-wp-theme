@@ -1,0 +1,12 @@
+.entrance {
+  animation-duration: 1.8s;
+  animation-fill-mode: both;
+  transition-duration: 1ms;
+  animation-iteration-count: 1;
+  animation-name: entrance;
+}
+
+.fadeInDown {
+  animation-duration: 1.2s;
+  animation-name: fadeInDown;
+}
