@@ -52,3 +52,10 @@
   background: transparent;
   border-top: 0;
 }
+
+.special-category-page-image {
+  object-fit: cover;
+  object-position: center;
+  width: 100%;
+  max-height: 360px;
+}

@@ -5,6 +5,10 @@
     position: absolute;
     bottom: 35px;
     right: 0;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
 }
 
@@ -13,5 +17,5 @@
 }
 
 .slanted-bg {
-  background: linear-gradient(110deg, $color-white-60 77%, $color-purple-60 23%);
+  background: linear-gradient(110deg, $color-white-60 80%, $color-purple-60 20%);
 }

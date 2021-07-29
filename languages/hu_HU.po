@@ -6,12 +6,12 @@ msgstr ""
 "Report-Msgid-Bugs-To: https://gitlab.rackhost.hu/rackhost/wp-tudasbazis/-/issues\n"
 "Last-Translator: Kristóf Gábor <gaborkristof@protonmail.com>\n"
 "Language-Team: Rackhost Ltd. <https://www.rackhost.hu/>\n"
-"Language: English\n"
+"Language: Hungarian\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-06-30T13:13:17+00:00\n"
-"PO-Revision-Date: Y2021-06-30T13:13:17+00:00\n"
+"POT-Creation-Date: 2021-07-27T16:24:17+00:00\n"
+"PO-Revision-Date: Y2021-07-27T16:24:17+00:00\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: astro\n"
 
@@ -24,7 +24,7 @@ msgid "https://gitlab.rackhost.hu/rackhost/wp-tudasbazis/"
 msgstr "https://gitlab.rackhost.hu/rackhost/wp-tudasbazis/"
 
 #. Description of the theme
-msgid "Astro is a custom WordPress theme for Rackhost knowledge base."
+msgid "Astro is a custom WordPress theme for the Rackhost knowledge base."
 msgstr "Az Astro egy egyedi WordPress téma a Rackhost tudasbazis számára."
 
 #. Author of the theme
@@ -32,8 +32,18 @@ msgid "Gábor Kristóf & the Rackhost team"
 msgstr "Gábor Kristóf & a Rackhost csapat"
 
 #. Author URI of the theme
-msgid "https://www.rackhost.hu/"
-msgstr "https://www.rackhost.hu/"
+msgid "https://www.gaborkristof.com/"
+msgstr "https://www.gaborkristof.com/"
+
+#: 404.php:23
+msgid "Error: The page you were looking for was not found."
+msgstr "Hiba: A keresett oldal nem található."
+
+#: 404.php:31
+#: template-parts/categories/_category.php:46
+#: template-parts/search-results/_search-results.php:49
+msgid "Go back"
+msgstr "Vissza"
 
 #: inc/classes/class-latest-widget.php:27
 msgid "Latest Posts Widget"
@@ -43,13 +53,14 @@ msgstr "Legutóbbi Szakértői cikkek"
 msgid "Display Latest Expert Posts"
 msgstr "A legutóbbi szakértői cikkek listázása"
 
-#: inc/classes/class-latest-widget.php:51
+#: inc/classes/class-latest-widget.php:52
 #: template-parts/categories/_special-category.php:28
+#: template-parts/categories/_special-category.php:90
 msgid "Our Expert posts"
 msgstr "Szakértői Cikkeink"
 
-#: inc/classes/class-latest-widget.php:75
-#: template-parts/categories/_category-cards.php:86
+#: inc/classes/class-latest-widget.php:79
+#: template-parts/categories/_category-cards.php:88
 #: template-parts/categories/_special-category.php:31
 msgid "Show more"
 msgstr "Mutass még"
@@ -82,41 +93,71 @@ msgstr "Címke Kategória Widget"
 msgid "Read more"
 msgstr "Tovább"
 
-#: inc/helpers/template-tags.php:109
+#: inc/helpers/template-tags.php:106
 msgid "%1$s"
 msgstr "%1$s"
 
-#: PageServices.php:33
+#: PageServices.php:46
 msgid "Prices don't contain VAT!"
 msgstr "Az árak az ÁFA-t nem tartalmazzák!"
 
-#: searchform.php:22
+#: searchform.php:24
 msgid "What are you looking for?"
 msgstr "Miben segíthetünk?"
 
-#: searchform.php:24
-#: searchform.php:25
+#: searchform.php:26
+#: searchform.php:29
 msgid "Search"
 msgstr "Keresés"
 
-#: template-parts/categories/_category-cards.php:39
+#: template-parts/categories/_category-cards.php:60
 msgid " posts in this category"
-msgstr " db cikk a témában"
+msgstr " db cikk ebben a témában"
 
-#: template-parts/categories/_primary-category.php:64
-#: template-parts/categories/_primary-category.php:86
+#: template-parts/categories/_category-cards.php:104
+msgid " posts"
+msgstr " db cikk"
+
+#: template-parts/categories/_category.php:33
+#: template-parts/search-results/_search-results.php:36
+msgid "Sorry no posts were found!"
+msgstr "Sajnáljuk, egy cikket sem találtunk!"
+
+#: template-parts/categories/_category.php:38
+#: template-parts/search-results/_search-results.php:41
+msgid "Here is a cute robot to cheer you up:"
+msgstr "De itt egy aranyos robot ami felvidít:"
+
+#: template-parts/categories/_primary-category.php:71
+#: template-parts/categories/_primary-category.php:93
 msgid "basics"
 msgstr "alapok"
 
-#: template-parts/categories/_primary-category.php:75
+#: template-parts/categories/_primary-category.php:82
 msgid "All posts"
 msgstr "Összes cikk"
 
-#: template-parts/categories/_primary-category.php:88
+#: template-parts/categories/_primary-category.php:95
 msgid "all posts"
 msgstr "összes cikk"
 
-#: template-parts/footer/foot/_copyright.php:16
+#: template-parts/categories/_special-category-page.php:15
+msgid "Expert posts"
+msgstr "Szakértői cikkek"
+
+#: template-parts/categories/_special-category.php:119
+msgid "Previous"
+msgstr "Előző"
+
+#: template-parts/categories/_special-category.php:123
+msgid "Show all post"
+msgstr "Mutasd mind"
+
+#: template-parts/categories/_special-category.php:132
+msgid "Next"
+msgstr "Következő"
+
+#: template-parts/footer/foot/_copyright.php:22
 msgid "Ltd."
 msgstr "Zrt."
 
@@ -149,6 +190,10 @@ msgstr " hírlevél"
 msgid "Sign up and we'll notify you about our latest articles."
 msgstr "Iratkozz fel és értesülj elsőként a Tudásbázis legfrissebb cikkeiről."
 
+#: template-parts/footer/newsletter/_signup-form.php:14
+msgid "my@email.com"
+msgstr "én@emailem.com"
+
 #: template-parts/footer/newsletter/_signup-form.php:16
 msgid "Sign Up"
 msgstr "Feliratkozom"
@@ -169,6 +214,18 @@ msgstr "Olvass tovább<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgid "Pages:"
 msgstr "Oldalak:"
 
+#: template-parts/post/_post-cta.php:8
+msgid "Try out Rackhost.hu for more information about our products."
+msgstr "További információkért a solgáltatásainkról látogass el a Rackhost.hu-ra"
+
+#: template-parts/post/_post-cta.php:10
+msgid "https://www.rackhost.hu"
+msgstr "https://www.rackhost.hu"
+
+#: template-parts/post/_post-cta.php:11
+msgid "I'll try"
+msgstr "Kipróbálom"
+
 #: template-parts/post/_post-footer.php:11
 msgid "Related posts"
 msgstr "Kapcsolódó cikkek"
@@ -177,14 +234,14 @@ msgstr "Kapcsolódó cikkek"
 msgid "Back"
 msgstr "Vissza"
 
-#: template-parts/search-results/_search-results.php:17
+#: template-parts/search-results/_search-results.php:18
 msgid "results for: "
 msgstr "db eredmény erre a keresésre: "
 
-#: template-parts/services/_service-card.php:20
+#: template-parts/services/_service-card.php:23
 msgid "Ft from"
 msgstr "Ft-tól"
 
-#: template-parts/services/_service-card.php:29
+#: template-parts/services/_service-card.php:32
 msgid "Select"
 msgstr "Tovább"

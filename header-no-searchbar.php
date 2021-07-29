@@ -1,6 +1,6 @@
 <?php
 /**
- * WordPress custom header template without searchbar
+ * Custom header template without displaying the search bar
  *
  * @link https://codex.wordpress.org/Theme_Development#Document_Head_.28header.php.29
  *

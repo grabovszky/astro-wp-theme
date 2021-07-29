@@ -1,8 +1,8 @@
 {
   "name": "astro",
   "version": "1.0.0",
-  "description": "Astro is a custom WordPress theme for wiki pages.",
-  "author": "Gábor Kristó",
+  "description": "Astro is a custom WordPress theme for Rackhost knowledge base.",
+  "author": "Gábor Kristóf & the Rackhost team",
   "license": "proprietary license",
   "private": true,
   "main": "src/js/main.js",
@@ -13,13 +13,13 @@
     "sass",
     "webpack"
   ],
-  "homepage": "https://github.com/grabovszky/astro-wp-theme",
+  "homepage": "https://www.rackhost.hu/tudásbázis",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/grabovszky/astro-wp-theme.git"
+    "url": "git+https://gitlab.rackhost.hu/rackhost/wp-tudasbazis.git"
   },
   "bugs": {
-    "url": "https://github.com/grabovszky/astro-wp-theme/issues"
+    "url": "https://gitlab.rackhost.hu/rackhost/wp-tudasbazis/issues"
   },
   "browserslist": [
     "defaults"

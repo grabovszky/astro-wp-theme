@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+# Fancy entrance keyframe for header illustration
+  --------------------------------------------------------------*/
 @keyframes entrance {
   from {
     opacity: 0;
@@ -19,6 +22,9 @@
   }
 }
 
+/*--------------------------------------------------------------
+# Fancy entrance illustration of sliding down from top of screen
+  --------------------------------------------------------------*/
 @keyframes fadeInDown {
   from {
     opacity: 0;
@@ -28,5 +34,49 @@
   to {
     opacity: 1;
     transform: translate3d(0, 0, 0);
+  }
+}
+
+/*--------------------------------------------------------------
+# Rotating and fading in illustration
+  --------------------------------------------------------------*/
+@keyframes rotateIn {
+  from {
+    transform: rotate3d(0, 0, 1, -200deg);
+    opacity: 0;
+  }
+
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+/*--------------------------------------------------------------
+# Horizontal shaking illustration
+  --------------------------------------------------------------*/
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  6.5% {
+    transform: translateX(-6px) rotateY(-9deg);
+  }
+
+  18.5% {
+    transform: translateX(5px) rotateY(7deg);
+  }
+
+  31.5% {
+    transform: translateX(-3px) rotateY(-5deg);
+  }
+
+  43.5% {
+    transform: translateX(2px) rotateY(3deg);
+  }
+
+  50% {
+    transform: translateX(0);
   }
 }

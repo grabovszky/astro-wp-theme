@@ -10,8 +10,8 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"POT-Creation-Date: 2021-06-30T13:13:17+00:00\n"
-"PO-Revision-Date: Y2021-06-30T13:13:17+00:00\n"
+"POT-Creation-Date: 2021-07-27T16:24:17+00:00\n"
+"PO-Revision-Date: Y2021-07-27T16:24:17+00:00\n"
 "X-Generator: WP-CLI 2.5.0\n"
 "X-Domain: astro\n"
 
@@ -24,7 +24,7 @@ msgid "https://gitlab.rackhost.hu/rackhost/wp-tudasbazis/"
 msgstr ""
 
 #. Description of the theme
-msgid "Astro is a custom WordPress theme for Rackhost knowledge base."
+msgid "Astro is a custom WordPress theme for the Rackhost knowledge base."
 msgstr ""
 
 #. Author of the theme
@@ -32,7 +32,17 @@ msgid "Gábor Kristóf & the Rackhost team"
 msgstr ""
 
 #. Author URI of the theme
-msgid "https://www.rackhost.hu/"
+msgid "https://www.gaborkristof.com/"
+msgstr ""
+
+#: 404.php:23
+msgid "Error: The page you were looking for was not found."
+msgstr ""
+
+#: 404.php:31
+#: template-parts/categories/_category.php:46
+#: template-parts/search-results/_search-results.php:49
+msgid "Go back"
 msgstr ""
 
 #: inc/classes/class-latest-widget.php:27
@@ -43,13 +53,14 @@ msgstr ""
 msgid "Display Latest Expert Posts"
 msgstr ""
 
-#: inc/classes/class-latest-widget.php:51
+#: inc/classes/class-latest-widget.php:52
 #: template-parts/categories/_special-category.php:28
+#: template-parts/categories/_special-category.php:90
 msgid "Our Expert posts"
 msgstr ""
 
-#: inc/classes/class-latest-widget.php:75
-#: template-parts/categories/_category-cards.php:86
+#: inc/classes/class-latest-widget.php:79
+#: template-parts/categories/_category-cards.php:88
 #: template-parts/categories/_special-category.php:31
 msgid "Show more"
 msgstr ""
@@ -82,41 +93,71 @@ msgstr ""
 msgid "Read more"
 msgstr ""
 
-#: inc/helpers/template-tags.php:109
+#: inc/helpers/template-tags.php:106
 msgid "%1$s"
 msgstr ""
 
-#: PageServices.php:33
+#: PageServices.php:46
 msgid "Prices don't contain VAT!"
 msgstr ""
 
-#: searchform.php:22
+#: searchform.php:24
 msgid "What are you looking for?"
 msgstr ""
 
-#: searchform.php:24
-#: searchform.php:25
+#: searchform.php:26
+#: searchform.php:29
 msgid "Search"
 msgstr ""
 
-#: template-parts/categories/_category-cards.php:39
+#: template-parts/categories/_category-cards.php:60
 msgid " posts in this category"
 msgstr ""
 
-#: template-parts/categories/_primary-category.php:64
-#: template-parts/categories/_primary-category.php:86
+#: template-parts/categories/_category-cards.php:104
+msgid " posts"
+msgstr ""
+
+#: template-parts/categories/_category.php:33
+#: template-parts/search-results/_search-results.php:36
+msgid "Sorry no posts were found!"
+msgstr ""
+
+#: template-parts/categories/_category.php:38
+#: template-parts/search-results/_search-results.php:41
+msgid "Here is a cute robot to cheer you up:"
+msgstr ""
+
+#: template-parts/categories/_primary-category.php:71
+#: template-parts/categories/_primary-category.php:93
 msgid "basics"
 msgstr ""
 
-#: template-parts/categories/_primary-category.php:75
+#: template-parts/categories/_primary-category.php:82
 msgid "All posts"
 msgstr ""
 
-#: template-parts/categories/_primary-category.php:88
+#: template-parts/categories/_primary-category.php:95
 msgid "all posts"
 msgstr ""
 
-#: template-parts/footer/foot/_copyright.php:16
+#: template-parts/categories/_special-category-page.php:15
+msgid "Expert posts"
+msgstr ""
+
+#: template-parts/categories/_special-category.php:119
+msgid "Previous"
+msgstr ""
+
+#: template-parts/categories/_special-category.php:123
+msgid "Show all post"
+msgstr ""
+
+#: template-parts/categories/_special-category.php:132
+msgid "Next"
+msgstr ""
+
+#: template-parts/footer/foot/_copyright.php:22
 msgid "Ltd."
 msgstr ""
 
@@ -149,6 +190,10 @@ msgstr ""
 msgid "Sign up and we'll notify you about our latest articles."
 msgstr ""
 
+#: template-parts/footer/newsletter/_signup-form.php:14
+msgid "my@email.com"
+msgstr ""
+
 #: template-parts/footer/newsletter/_signup-form.php:16
 msgid "Sign Up"
 msgstr ""
@@ -169,6 +214,18 @@ msgstr ""
 msgid "Pages:"
 msgstr ""
 
+#: template-parts/post/_post-cta.php:8
+msgid "Try out Rackhost.hu for more information about our products."
+msgstr ""
+
+#: template-parts/post/_post-cta.php:10
+msgid "https://www.rackhost.hu"
+msgstr ""
+
+#: template-parts/post/_post-cta.php:11
+msgid "I'll try"
+msgstr ""
+
 #: template-parts/post/_post-footer.php:11
 msgid "Related posts"
 msgstr ""
@@ -177,14 +234,14 @@ msgstr ""
 msgid "Back"
 msgstr ""
 
-#: template-parts/search-results/_search-results.php:17
+#: template-parts/search-results/_search-results.php:18
 msgid "results for: "
 msgstr ""
 
-#: template-parts/services/_service-card.php:20
+#: template-parts/services/_service-card.php:23
 msgid "Ft from"
 msgstr ""
 
-#: template-parts/services/_service-card.php:29
+#: template-parts/services/_service-card.php:32
 msgid "Select"
 msgstr ""

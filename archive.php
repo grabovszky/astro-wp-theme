@@ -16,9 +16,11 @@ get_header();
 
     <div class="container-fluid astro-bg-light pb-5" id="primary">
         <div class="container-xxl d-flex py-4">
+
             <?php get_sidebar(); ?>
+
             <main id="main" class="site-main" role="main">
-                <div class="col ms-3 my-3">
+                <div class="col ms-3 my-3 category-container">
                     <?php
 
                     if (get_queried_object_id() === get_term_by('slug', 'szakertoi_cikk', 'post_tag')->term_id) {
@@ -36,6 +38,7 @@ get_header();
                     ?>
                 </div>
             </main>
+
         </div>
     </div>
 

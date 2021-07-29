@@ -1,5 +1,10 @@
 .post-container {
   padding: 2.5rem;
+
+  @media(max-width: 800px) {
+    padding: 1.5rem;
+    border-radius: 0;
+  }
 }
 
 .cta-bg {
@@ -7,4 +12,14 @@
   background-image: url('../img/domain-elkapo-banner-L.svg');
   background-repeat: no-repeat;
   background-position: center;
+}
+
+#disqus_thread {
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+
+  @media(max-width: 800px) {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

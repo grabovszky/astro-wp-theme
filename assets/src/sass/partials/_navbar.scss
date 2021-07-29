@@ -88,3 +88,18 @@
     }
   }
 }
+
+.mobile-nav {
+  .mobile-items {
+    a {
+      text-decoration: none;
+      color: $color-blue-100;
+      font-weight: 700;
+    }
+
+    hr {
+      margin-right: 3rem;
+      margin-left: 3rem;
+    }
+  }
+}

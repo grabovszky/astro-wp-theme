@@ -4,6 +4,10 @@
   background-image: url('../img/banner/header.svg');
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (max-width: 800px) {
+    height: 220px
+  }
 }
 
 .searchbar-bg-small {
@@ -12,12 +16,21 @@
   background-image: url('../img/banner/header-subpage.svg');
   background-repeat: no-repeat;
   background-position: center;
+
+  @media (max-width: 800px) {
+    height: 120px
+  }
 }
 
 .searchform {
   & button {
     padding-right: 2rem !important;
     padding-left: 2rem !important;
+
+    @media (max-width: 800px) {
+      padding-right: 0 !important;
+      padding-left: 0 !important;
+    }
   }
 }
 
@@ -30,5 +43,17 @@
     right: 60px;
 
     @extend .entrance;
+
+    @media (max-width: 800px) {
+      display: none;
+    }
   }
+}
+
+.mobile-round-button {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0.2rem !important;
+  top: 12%;
 }

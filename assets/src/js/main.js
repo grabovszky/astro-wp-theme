@@ -14,6 +14,7 @@ import './listeners/newsletter-form-listener.js';
 import './listeners/footer-copyright-listner.js';
 import './listeners/illustration-listener.js';
 import './listeners/konami-listener.js';
+import './listeners/disqus-listener.js';
 
 // load sass files
 import '../sass/style.scss';

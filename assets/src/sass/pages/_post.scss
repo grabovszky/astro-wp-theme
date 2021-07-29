@@ -1,5 +1,10 @@
 .entry-content {
   color: $color-blue-100;
+  max-width: 60vw;
+
+  @media (max-width: 800px) {
+    max-width: 90vw;
+  }
 
   h2 {
     @extend .text-h4;
@@ -18,9 +23,21 @@
     }
   }
 
+  ol, ul {
+    padding-left: 0;
+    font-size: 0.9rem;
+
+    li {
+      font-weight: 400;
+    }
+  }
+
+  figure {
+    width: 100% !important;
+  }
+
   img {
-    max-width: 100%;
-    display: block;
+    @extend .img-fluid;
   }
 
   // video embed reset to be responsive
@@ -95,4 +112,15 @@
     margin-left: 0;
     margin-right: 0.6rem;
   }
+}
+
+.cute-robot {
+  margin: 4rem auto;
+  display: block;
+  @extend .rotateIn;
+}
+
+.img-error {
+  margin: 4rem auto;
+  display: block;
 }

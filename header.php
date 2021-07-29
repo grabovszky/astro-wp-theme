@@ -1,6 +1,6 @@
 <?php
 /**
- * WordPress custom header template
+ * Custom header template
  *
  * @link https://codex.wordpress.org/Theme_Development#Document_Head_.28header.php.29
  *

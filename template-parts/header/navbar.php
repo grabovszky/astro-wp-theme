@@ -16,7 +16,7 @@ $header_items   = wp_get_nav_menu_items($header_menu_id);
 ?>
 
 <nav class="navbar navbar-expand-lg my-1">
-    <div class="container-xxl">
+    <div class="container-xxl g-0">
         <?php get_template_part('template-parts/header/navbar/_brand', null, ['header_menu' => $header_menu]); ?>
         <?php get_template_part('template-parts/header/navbar/_collapse'); ?>
         <?php get_template_part('template-parts/header/navbar/_items', null, ['header_items' => $header_items]); ?>

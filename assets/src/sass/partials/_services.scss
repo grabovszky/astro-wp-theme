@@ -12,6 +12,7 @@
 
   strong {
     @include fluid-font-size(20px, 28px);
+    font-weight: 500;
   }
 
   hr {

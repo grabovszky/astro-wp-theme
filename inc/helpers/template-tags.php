@@ -78,18 +78,15 @@ function astro_get_the_tags()
 
             $category_tag = get_field('category_tag', $tag->taxonomy . '_' . $tag->term_id);
 
-            display_tag($tag, ! $category_tag);
+            if ($category_tag) {
+                echo '<span class="badge rounded-pill button-tag button-tag-secondary"
+                onclick="location.href=\'' . get_tag_link($tag->term_id) . '\'">' . $tag->name . '</span>';
+            } else {
+                echo '<span class="badge rounded-pill button-tag button-tag-primary"
+                onclick="location.href=\'' . get_tag_link($tag->term_id) . '\'">' . $tag->name . '</span>';
+            }
         }
     }
-}
-
-function display_tag($tag, $primary)
-{
-    $classes = 'class="badge rounded-pill button-tag button-tag-' . ($primary ? 'primary"' : 'secondary"');
-    $link    = 'onclick="location.href=\'' . get_tag_link($tag->term_id) . '\'"';
-    $name    = $tag->name;
-
-    echo '<span ' . $classes . ' ' . $link . '>' . $name . '</span>';
 }
 
 /**

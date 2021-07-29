@@ -8,6 +8,12 @@
 ?>
 
 <div class="col text-center footer-copyright">
+    <?php
+    if (wp_is_mobile()) {
+        ?>
+        <hr>
+        <?php
+    } ?>
     <span id="footer-copyright">
         <?php echo
             '&copy ' .

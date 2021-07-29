@@ -10,9 +10,10 @@
 <div class="collapse navbar-collapse" id="main-menu">
 
     <?php
+    get_template_part('template-parts/header/navbar/_mobile_items');
     if ( ! empty($args['header_items']) && is_array($args['header_items'])) {
         ?>
-        <ul class="navbar-nav ms-auto">
+        <ul class="d-none d-lg-flex navbar-nav ms-auto">
             <?php foreach ($args['header_items'] as $menu_item) {
                 get_template_part('template-parts/header/navbar/items/_item', null, ['menu_item' => $menu_item]);
 

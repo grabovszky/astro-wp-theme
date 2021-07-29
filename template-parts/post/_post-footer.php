@@ -13,7 +13,7 @@
 
 <hr>
 
-<div class="row p-2">
+<div class="row g-0 p-2">
 
     <?php
     /**
@@ -41,7 +41,7 @@
     $counter = 0;
 
     ?>
-    <div class="col">
+    <div class="col-sm-12 col-md-6">
         <ul class="list">
             <?php
 
@@ -52,7 +52,7 @@
             ?>
         </ul>
     </div>
-    <div class="col">
+    <div class="col-sm-12 col-md-6">
         <ul class="list">
             <?php
             }

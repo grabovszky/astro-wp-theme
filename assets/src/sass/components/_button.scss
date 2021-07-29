@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+# Base button style
+  --------------------------------------------------------------*/
 .button {
   @extend .btn;
 
@@ -10,6 +13,9 @@
   padding: 0.75rem 1.75rem;
 }
 
+/*--------------------------------------------------------------
+# Extended button style
+  --------------------------------------------------------------*/
 .button-primary {
   color: $color-white-100;
   background-color: $color-red-80;
@@ -36,6 +42,19 @@
   }
 }
 
+.button-purple {
+  color: $color-white-100;
+  background-color: $color-purple-80;
+
+  width: 260px;
+
+  &:hover {
+    background: none;
+    border: 1px solid $color-purple-80;
+    color: $color-purple-80;
+  }
+}
+
 .button-category {
   font-size: 0.9rem;
   font-weight: 700;
@@ -57,18 +76,39 @@
   background-color: $color-purple-80;
 }
 
+/*--------------------------------------------------------------
+# Base tag style
+  --------------------------------------------------------------*/
 .button-tag {
+  @extend .shadow-sm;
+  cursor: pointer;
   margin-left: 0.6rem;
   padding: 0.4rem 1rem 0.3rem;
 
   color: $color-blue-100;
   font-weight: bold;
+
+  transition: 0.2s ease;
 }
 
+/*--------------------------------------------------------------
+# Extended tag style
+  --------------------------------------------------------------*/
 .button-tag-primary {
   background-color: $color-blue-40;
+
+  &:hover {
+    background-color: $color-purple-80;
+    color: $color-white-100;
+    @extend .shadow;
+  }
 }
 
 .button-tag-secondary {
   background-color: $color-white-60;
+
+  &:hover {
+    background-color: $color-blue-40;
+    @extend .shadow;
+  }
 }

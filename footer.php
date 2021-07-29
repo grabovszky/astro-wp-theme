@@ -1,6 +1,6 @@
 <?php
 /**
- * WordPress custom footer template
+ * Custom footer template
  *
  * @link https://codex.wordpress.org/Theme_Development#Footer_.28footer.php.29
  *

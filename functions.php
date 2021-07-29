@@ -51,3 +51,13 @@ function astro_get_theme_instance()
 }
 
 astro_get_theme_instance();
+
+add_filter('relevanssi_modify_wp_query', 'rlv_oldest_first');
+function rlv_oldest_first($query)
+{
+    $query->set('orderby', ['relevance' => 'dsc']);
+
+    return $query;
+}
+
+add_filter('img_caption_shortcode_width', '__return_false');

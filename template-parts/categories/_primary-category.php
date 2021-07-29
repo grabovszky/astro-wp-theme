@@ -5,8 +5,15 @@
  * @package Astro
  */
 
+session_start();
+
 $taxonomy = $wp_query->get_queried_object();
-$basics   = false;
+
+if ( ! isset($_POST['tag_list_button'])) {
+    $_SESSION['basics'] = true; // Reset counter
+} else {
+    $_SESSION['basics'] = $_POST['tag_list_button'] === 'true';
+}
 
 global $basics_query;
 global $all_query;
@@ -14,7 +21,7 @@ $paged        = (get_query_var('paged')) ?: 1;
 $basics_query = new WP_Query(
     [
         'post_type'      => ['post'],
-        'posts_per_page' => get_option('posts_per_page'),
+        'posts_per_page' => -1,
         'paged'          => $paged,
         'post_status'    => 'publish',
         'orderby'        => 'DESC',
@@ -36,7 +43,7 @@ $basics_query = new WP_Query(
 $all_query    = new WP_Query(
     [
         'post_type'      => ['post'],
-        'posts_per_page' => get_option('posts_per_page'),
+        'posts_per_page' => -1,
         'paged'          => $paged,
         'post_status'    => 'publish',
         'orderby'        => 'DESC',
@@ -58,7 +65,7 @@ $all_query    = new WP_Query(
                 <button type="submit"
                         name="tag_list_button"
                         value="true"
-                        class="me-4 button button-category <?php if ($basics) {
+                        class="me-4 button button-category <?php if ($_SESSION['basics']) {
                             echo 'button-category-active';
                         } ?>">
                     <?php echo get_the_archive_title() . ' ' . esc_html__(
@@ -69,7 +76,7 @@ $all_query    = new WP_Query(
                 <button type="submit"
                         name="tag_list_button"
                         value="false"
-                        class="button button-category <?php if ( ! $basics) {
+                        class="button button-category <?php if ( ! $_SESSION['basics']) {
                             echo 'button-category-active';
                         } ?>">
                     <?php echo esc_html__('All posts', 'astro') . ' (' . $taxonomy->count . ')'; ?>
@@ -82,7 +89,7 @@ $all_query    = new WP_Query(
                     <?php
                     echo get_the_archive_title();
 
-                    if ($basics) {
+                    if ($_SESSION['basics']) {
                         echo ' ' . esc_html__('basics', 'astro');
                     } else {
                         echo ' - ' . esc_html__('all posts', 'astro');
@@ -102,15 +109,13 @@ $all_query    = new WP_Query(
         <ul class="list-group p-3">
             <?php
 
-            $query = $basics ? $basics_query : $all_query;
+            $query = $_SESSION['basics'] ? $basics_query : $all_query;
 
             if ($query->have_posts()) {
                 while ($query->have_posts()) {
                     $query->the_post();
                     get_template_part('template-parts/categories/_category-excerpt');
                 }
-
-                astro_taxonomy_pagination();
             }
 
             wp_reset_postdata();

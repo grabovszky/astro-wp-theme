@@ -1,3 +1,6 @@
+/*--------------------------------------------------------------
+# Animation using keyframes for header illustration
+  --------------------------------------------------------------*/
 .entrance {
   animation-duration: 1.8s;
   animation-fill-mode: both;
@@ -6,7 +9,30 @@
   animation-name: entrance;
 }
 
+/*--------------------------------------------------------------
+# Animation using keyframes for subscribe illustration
+  --------------------------------------------------------------*/
 .fadeInDown {
   animation-duration: 1.2s;
   animation-name: fadeInDown;
+}
+
+/*--------------------------------------------------------------
+# Animation using keyframes for not found illustration
+  --------------------------------------------------------------*/
+.rotateIn {
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-name: rotateIn;
+  transform-origin: center;
+}
+
+/*--------------------------------------------------------------
+# Animation using keyframes for 404 text
+  --------------------------------------------------------------*/
+.shake {
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: ease-in-out;
+  animation-name: shake;
 }

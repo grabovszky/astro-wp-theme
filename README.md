@@ -1,4 +1,4 @@
-# Astro
+# ![Rackhost][logo] | Tudásbázis WordPress theme
 
 ## Table of Contents
 
@@ -19,7 +19,7 @@
 
 ## About The Project
 
-Astro is a custom WordPress theme for wiki pages.
+Astro is a custom WordPress theme for the [Rackhost/tudásbázis](https://www.rackhost.hu/tudasbazis/).
 
 ### Built With
 
@@ -42,7 +42,7 @@ You can easily install this theme and add it to your WordPress site.
 ### Installation
 
 ```bash
-git clone https://github.com/grabovszky/astro-wp-theme.git
+git clone https://gitlab.rackhost.hu/rackhost/wp-tudasbazis.git
 cd wp-tudasbazis/assets
 npm install
 npm run dev
@@ -63,7 +63,7 @@ After the bundling has finished go to your WordPress admin site:
 
 1. In your admin panel, go to `Appearance` > `Themes` and click the `Add New` button.
 2. Click Upload Theme and Choose File, then select the `astro.zip` file. Click Install Now.
-3. Click `Activate` to use your new theme right away.
+3. Click `Activate` and then configure the theme settings and Advanced Custom Fields according to the `docs`.
 
 ### Scripts
 
@@ -81,15 +81,15 @@ Our `package.json` file comes with some useful scripts to use.
 ## License
 
 WordPress (`.php`) files is distributed under the GPLv3 license.
-See [LICENSE.md](https://github.com/grabovszky/astro-wp-theme/LICENSE.md) for more information. All
+See [LICENSE.md](https://gitlab.rackhost.hu/rackhost/wp-tudasbazis/-/blob/master/LICENSE.md) for more information. All
 other files under `/assets` is distributed under a proprietary license.
-See [assets/LICENSE.md](https://github.com/grabovszky/astro-wp-theme/assets/LICENSE.md) for more
+See [assets/LICENSE.md](https://gitlab.rackhost.hu/rackhost/wp-tudasbazis/-/blob/master/assets/LICENSE.md) for more
 information.
 
 ## Changelog
 
 All notable changes to this project will be documented
-in [CHANGELOG.md](https://github.com/grabovszky/astro-wp-theme/CHANGELOG.md).
+in [CHANGELOG.md](https://gitlab.rackhost.hu/rackhost/wp-tudasbazis/-/blob/master/README.md).
 
 ## Code Style
 
@@ -105,14 +105,16 @@ The project adhere to the guidelines defined below:
 ## Documentation
 
 For a detailed explanation of the project please refer to
-the [`/docs`](https://github.com/grabovszky/astro-wp-theme/docs/)
+the [`/docs`](https://gitlab.rackhost.hu/rackhost/wp-tudasbazis/-/blob/master/docs/)
 
 ## Contact
 
 Kristóf Gábor - [gaborkristof@protonmail.com](gaborkristof@protonmail.com)
 
-Project Link: [https://github.com/grabovszky/astro-wp-theme](https://github.com/grabovszky/astro-wp-theme)
+Project Link: [https://gitlab.rackhost.hu/rackhost/wp-tudasbazis/](https://gitlab.rackhost.hu/rackhost/wp-tudasbazis)
 
 ## Acknowledgements
 
 - Bootstrap, licensed under [MIT](https://getbootstrap.com/docs/5.0/about/license/)
+
+[logo]: assets/src/img/logo/Rackhost-logo.svg 'Rackhost Logo'

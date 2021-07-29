@@ -11,8 +11,8 @@
 
 
 <footer>
-    <div class="container-fluid astro-footer">
-        <div class="container-xxl">
+    <div class="container-fluid astro-footer px-4">
+        <div class="container">
             <div class="row py-5">
                 <?php get_template_part('template-parts/footer/foot/_logo'); ?>
             </div>

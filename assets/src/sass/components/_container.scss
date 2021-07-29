@@ -1,5 +1,25 @@
+.site-main {
+  width: inherit;
+}
+
+.container-fluid {
+  @media(max-width: 800px) {
+    padding: 0 !important;
+  }
+}
+
 .container-xxl {
   max-width: 1380px;
+
+  @media(max-width: 800px) {
+    padding: 0 !important;
+  }
+}
+
+.category-container {
+  @media(max-width: 800px) {
+    margin: 0 !important;
+  }
 }
 
 .content-container {
@@ -12,5 +32,18 @@
 
   &:hover {
     @extend .shadow;
+  }
+}
+
+.main-content-container {
+  margin-left: 1rem !important;
+  margin-bottom: 1rem !important;
+  margin-top: 1rem !important;
+
+  @media(max-width: 800px) {
+    margin-left: 0 !important;
+    margin-top: 0 !important;
+
+    box-shadow: none;
   }
 }

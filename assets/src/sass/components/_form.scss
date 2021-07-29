@@ -38,5 +38,10 @@
     top: 16%;
     bottom: 16%;
     z-index: 2;
+
+    @media (max-width: 800px) {
+      top: 11%;
+      bottom: 11%;
+    }
   }
 }

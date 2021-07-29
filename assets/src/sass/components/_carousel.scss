@@ -5,6 +5,7 @@
   & [data-bs-target] {
     width: 19px;
     height: 19px;
+    border: none;
     border-radius: 100%;
     margin-right: 1rem;
     margin-left: 1rem;
@@ -13,22 +14,58 @@
   }
 }
 
+.carousel-inner {
+  height: 420px;
+  overflow: visible;
+
+  .height-cropped {
+    object-fit: cover;
+    object-position: center;
+    width: 100%;
+    max-height: 360px;
+  }
+}
+
 .carousel-indicators .active {
   background-color: $color-red-100 !important;
 }
 
-.height-cropped {
+.carousel-item {
+  cursor: pointer;
+}
+
+.img-thumbnail {
+  border: none;
+}
+
+.mobile-carousel {
+  height: 380px;
+}
+
+.mobile-carousel-button {
+  padding-top: 0.56rem !important;
+  padding-bottom: 0.56rem !important;
+}
+
+.mobile-card-img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
   object-fit: cover;
   object-position: center;
   width: 100%;
-  max-height: 354px;
+  max-height: 180px;
 }
 
-.horizontal-divider {
-  height: 2px !important;
-  color: $color-purple-40;
+.mobile-controls {
+  opacity: 1;
+  position: relative;
+  background-color: $color-purple-60;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  padding: 10px;
 }
 
-.carousel-item {
-  cursor: pointer;
+.control-icon {
+  display: inline;
 }

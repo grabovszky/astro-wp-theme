@@ -7,9 +7,10 @@
 
 ?>
 
-<li href="#" class="list-group-item category-list-item mt-4 p-0 pb-4" aria-current="true">
+<li class="list-group-item category-list-item mt-4 p-0 pb-4" aria-current="true">
     <div class="d-flex w-100 justify-content-between mb-3">
-        <h3 class="text-blue text-h4 text-bold  mb-1"><?php the_title(); ?></h3>
+        <a href="<?php echo get_permalink(get_the_ID()); ?>"
+           class="text-decoration-none text-blue text-h4 text-bold mb-1"><?php the_title(); ?></a>
         <div class="d-flex d-flex justify-content-end align-items-start">
             <?php astro_get_the_tags(); ?>
         </div>

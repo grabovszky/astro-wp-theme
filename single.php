@@ -14,7 +14,7 @@ get_header();
         <div class="container-xxl d-flex py-4">
             <?php get_sidebar(); ?>
             <main id="main" class="site-main" role="main">
-                <div class="col ms-3 my-3">
+                <div class="col main-content-container">
                     <?php get_template_part('template-parts/post/_post'); ?>
                 </div>
             </main>

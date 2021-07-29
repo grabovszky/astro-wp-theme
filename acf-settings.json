@@ -1,0 +1,967 @@
+[
+    {
+        "key": "group_60d3174f32e94",
+        "title": "Címke beállítások",
+        "fields": [
+            {
+                "key": "field_60ffc99f33cbe",
+                "label": "Megjelenítési név",
+                "name": "display_name",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60e2b96c473f1",
+                "label": "Kategória címke",
+                "name": "category_tag",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "Igen",
+                "ui_off_text": "Nem"
+            },
+            {
+                "key": "field_60d31824bb725",
+                "label": "Elsődleges címke",
+                "name": "primary_tag",
+                "type": "true_false",
+                "instructions": "Válaszd ki, hogy a címke elsődleges e vagy sem. Az elsődleges címkék a főoldalon láthatóvá válnak.",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60e2b96c473f1",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "Igen",
+                "ui_off_text": "Nem"
+            },
+            {
+                "key": "field_60d317d1bb724",
+                "label": "Címke ikon",
+                "name": "tag_icon",
+                "type": "image",
+                "instructions": "Tölts föl egy képet, ami megjelenik majd a kategória mellett a főoldalon. (megengedett formátum: svg, png)",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60e2b96c473f1",
+                            "operator": "==",
+                            "value": "1"
+                        },
+                        {
+                            "field": "field_60d31824bb725",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 60,
+                "min_height": 60,
+                "min_size": "",
+                "max_width": 512,
+                "max_height": 512,
+                "max_size": 1,
+                "mime_types": "svg, png"
+            },
+            {
+                "key": "field_60e2ba854a522",
+                "label": "Heading címke",
+                "name": "header_tag",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": [
+                    [
+                        {
+                            "field": "field_60e2b96c473f1",
+                            "operator": "==",
+                            "value": "1"
+                        },
+                        {
+                            "field": "field_60d31824bb725",
+                            "operator": "==",
+                            "value": "1"
+                        }
+                    ]
+                ],
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 0,
+                "ui": 1,
+                "ui_on_text": "Igen",
+                "ui_off_text": "Nem"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "post_tag"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "WordPress tagek beállítása"
+    },
+    {
+        "key": "group_60d315f0cd0d1",
+        "title": "CTA",
+        "fields": [
+            {
+                "key": "field_60ec53afc6243",
+                "label": "CTA desktop háttér",
+                "name": "cta_desktop_img",
+                "type": "image",
+                "instructions": "asd",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 400,
+                "min_height": 200,
+                "min_size": "",
+                "max_width": 800,
+                "max_height": 300,
+                "max_size": 2,
+                "mime_types": "svg, png"
+            },
+            {
+                "key": "field_60ec540cc6244",
+                "label": "CTA mobil háttér",
+                "name": "cta_mobile_img",
+                "type": "image",
+                "instructions": "asd",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 200,
+                "min_height": 200,
+                "min_size": "",
+                "max_width": 420,
+                "max_height": 300,
+                "max_size": 2,
+                "mime_types": "svg, png"
+            },
+            {
+                "key": "field_60ec544bc6245",
+                "label": "CTA text",
+                "name": "cta_text",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 500
+            },
+            {
+                "key": "field_60ec5474c6246",
+                "label": "CTA subtle text",
+                "name": "cta_subtle_text",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 500
+            },
+            {
+                "key": "field_60ec5487c6247",
+                "label": "CTA link",
+                "name": "cta_link",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_61000941eeb63",
+                "label": "CTA button szöveg",
+                "name": "cta_button_text",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Kipróbálom",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "taxonomy",
+                    "operator": "==",
+                    "value": "category"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "CTA beállítása"
+    },
+    {
+        "key": "group_60ec568d25a9e",
+        "title": "CTA override",
+        "fields": [
+            {
+                "key": "field_60ec568d36f73",
+                "label": "CTA desktop háttér",
+                "name": "cta_desktop_img_override",
+                "type": "image",
+                "instructions": "asd",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 400,
+                "min_height": 200,
+                "min_size": "",
+                "max_width": 800,
+                "max_height": 300,
+                "max_size": 2,
+                "mime_types": "svg, png"
+            },
+            {
+                "key": "field_60ec568d36fb4",
+                "label": "CTA mobil háttér",
+                "name": "cta_mobile_img_override",
+                "type": "image",
+                "instructions": "asd",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 200,
+                "min_height": 200,
+                "min_size": "",
+                "max_width": 420,
+                "max_height": 300,
+                "max_size": 2,
+                "mime_types": "svg, png"
+            },
+            {
+                "key": "field_60ec568d392ae",
+                "label": "CTA text",
+                "name": "cta_text_override",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 500
+            },
+            {
+                "key": "field_60ec568d3930e",
+                "label": "CTA subtle text",
+                "name": "cta_subtle_text_override",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": 500
+            },
+            {
+                "key": "field_60ec568d4d1cc",
+                "label": "CTA link",
+                "name": "cta_link_override",
+                "type": "url",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": ""
+            },
+            {
+                "key": "field_6100098e0d510",
+                "label": "CTA button text",
+                "name": "cta_button_text_override",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "CTA beállítása"
+    },
+    {
+        "key": "group_60ec574c08a94",
+        "title": "CTA switch",
+        "fields": [
+            {
+                "key": "field_60ec57550d446",
+                "label": "CTA switch",
+                "name": "cta_switch",
+                "type": "true_false",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "message": "",
+                "default_value": 1,
+                "ui": 1,
+                "ui_on_text": "Igen",
+                "ui_off_text": "Nem"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_60dd823e91053",
+        "title": "Fejléc menü",
+        "fields": [
+            {
+                "key": "field_60dd82538208c",
+                "label": "Teljes logó",
+                "name": "header_logo_full",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 30,
+                "min_height": 30,
+                "min_size": "",
+                "max_width": 300,
+                "max_height": 40,
+                "max_size": 1,
+                "mime_types": "svg, png"
+            },
+            {
+                "key": "field_60dd82ae8208d",
+                "label": "Mobil logó",
+                "name": "header_logo_mobile",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 30,
+                "min_height": 30,
+                "min_size": "",
+                "max_width": 200,
+                "max_height": 40,
+                "max_size": 1,
+                "mime_types": "svg, png"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "nav_menu",
+                    "operator": "==",
+                    "value": "43"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_60dc6c0837a27",
+        "title": "Lábléc infó",
+        "fields": [
+            {
+                "key": "field_60dc6c173184a",
+                "label": "Footer Logo",
+                "name": "footer_logo",
+                "type": "image",
+                "instructions": "Add an image (preferaby svg) to be displayed in the footer.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 48,
+                "min_height": 48,
+                "min_size": "",
+                "max_width": 280,
+                "max_height": 70,
+                "max_size": 1,
+                "mime_types": "png, svg"
+            },
+            {
+                "key": "field_60dc6cb43184b",
+                "label": "Footer Tagline",
+                "name": "footer_tagline",
+                "type": "text",
+                "instructions": "Company tagline under footer logo",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "Egyszerű domain vásárlás, online fizetéssel, pár perc alatt.",
+                "placeholder": "Example Tagline.",
+                "prepend": "",
+                "append": "",
+                "maxlength": 200
+            },
+            {
+                "key": "field_60dda898bf2c7",
+                "label": "Logo link",
+                "name": "footer_logo_link",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "https:\/\/www.rackhost.hu\/",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "nav_menu",
+                    "operator": "==",
+                    "value": "44"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_60dd73ab941f7",
+        "title": "Lábléc kontakt",
+        "fields": [
+            {
+                "key": "field_60dd73f2267fc",
+                "label": "Email",
+                "name": "footer_contact_email",
+                "type": "email",
+                "instructions": "Enter the eamil address.",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "info@rackhost.hu",
+                "placeholder": "info@rackhost.hu",
+                "prepend": "",
+                "append": ""
+            },
+            {
+                "key": "field_60dd7bf82616c",
+                "label": "Ügyfélszolgálat telefonszám",
+                "name": "footer_contact_phone_1",
+                "type": "text",
+                "instructions": "Enter moile number",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "+3614451200",
+                "placeholder": "+36 30 012 3456",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60dd7cef2616d",
+                "label": "Technikai ügylet telefonszám",
+                "name": "footer_contact_phone_2",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "+3614451204",
+                "placeholder": "+36 30 012 3456",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "nav_menu",
+                    "operator": "==",
+                    "value": "44"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_60dd8042a0a54",
+        "title": "Lábléc regisztártor logo",
+        "fields": [
+            {
+                "key": "field_60dd805aa0639",
+                "label": "Akkreditált regisztrátor logo",
+                "name": "footer_logo_2",
+                "type": "image",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 60,
+                "min_height": 60,
+                "min_size": "",
+                "max_width": 80,
+                "max_height": 160,
+                "max_size": 1,
+                "mime_types": "svg, png"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "nav_menu",
+                    "operator": "==",
+                    "value": "44"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": ""
+    },
+    {
+        "key": "group_60d2fefbb53a7",
+        "title": "Szakértői cikk",
+        "fields": [
+            {
+                "key": "field_60d2ffcdb9cea",
+                "label": "Szerző",
+                "name": "expert_post_author_name",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Példa Péter",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_60d2fffcb9ceb",
+                "label": "Szakterület",
+                "name": "expert_post_author_profession",
+                "type": "text",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "Média expert",
+                "prepend": "",
+                "append": "",
+                "maxlength": 30
+            },
+            {
+                "key": "field_60d30025b9cec",
+                "label": "Profil kép",
+                "name": "expert_post_author_picture",
+                "type": "image",
+                "instructions": "",
+                "required": 1,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 60,
+                "min_height": 60,
+                "min_size": "",
+                "max_width": 2048,
+                "max_height": 2048,
+                "max_size": 2,
+                "mime_types": "jpg, jpeg, png, svg, gif, webp"
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "post_type",
+                    "operator": "==",
+                    "value": "post"
+                },
+                {
+                    "param": "post_taxonomy",
+                    "operator": "==",
+                    "value": "post_tag:szakertoi_cikk"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "side",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Szakértői cikk beállítások"
+    },
+    {
+        "key": "group_60e7f6c127c7b",
+        "title": "Szolgáltatások",
+        "fields": [
+            {
+                "key": "field_60e7f6ecd7a49",
+                "label": "Szolgáltatás logó",
+                "name": "service_logo",
+                "type": "image",
+                "instructions": "Allowed file types (svg,png)",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "return_format": "array",
+                "preview_size": "thumbnail",
+                "library": "all",
+                "min_width": 140,
+                "min_height": 140,
+                "min_size": "",
+                "max_width": 400,
+                "max_height": 400,
+                "max_size": 1,
+                "mime_types": "svg, png"
+            },
+            {
+                "key": "field_60e7fc1bd7a4a",
+                "label": "Szolgáltatás ár",
+                "name": "service_price",
+                "type": "number",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": 1500,
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "min": "",
+                "max": "",
+                "step": ""
+            },
+            {
+                "key": "field_60e7fc57d7a4b",
+                "label": "Szolgáltatás leírás",
+                "name": "service_text",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            },
+            {
+                "key": "field_60e7fc9fa8098",
+                "label": "Szolgáltatás név",
+                "name": "service_name",
+                "type": "text",
+                "instructions": "",
+                "required": 0,
+                "conditional_logic": 0,
+                "wrapper": {
+                    "width": "",
+                    "class": "",
+                    "id": ""
+                },
+                "default_value": "",
+                "placeholder": "",
+                "prepend": "",
+                "append": "",
+                "maxlength": ""
+            }
+        ],
+        "location": [
+            [
+                {
+                    "param": "nav_menu_item",
+                    "operator": "==",
+                    "value": "44"
+                }
+            ]
+        ],
+        "menu_order": 0,
+        "position": "normal",
+        "style": "default",
+        "label_placement": "top",
+        "instruction_placement": "label",
+        "hide_on_screen": "",
+        "active": true,
+        "description": "Szolgáltatások beállításai"
+    }
+]

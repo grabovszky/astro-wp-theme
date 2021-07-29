@@ -1,7 +1,6 @@
 .widget {
   @extend .d-flex;
   @extend .flex-column;
-  @extend .py-4;
   @extend .content-container;
 
   margin-bottom: 1.5rem;
@@ -16,6 +15,7 @@
 }
 
 .widget_tags {
+  @extend .py-4;
 
   li {
     font-weight: 700;
@@ -65,12 +65,16 @@
 }
 
 .widget_latest {
-  padding-left: 2rem;
-  padding-right: 2rem;
+  padding: 3rem;
 
   @media (max-width: 1200px) {
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+
+  h4 {
+    margin-left: 0.75rem;
+    cursor: pointer;
   }
 
   li {
@@ -83,6 +87,8 @@
   }
 
   img {
+    object-fit: cover;
+    object-position: center;
     margin-top: 1rem;
     margin-bottom: 1rem;
     width: 100%;

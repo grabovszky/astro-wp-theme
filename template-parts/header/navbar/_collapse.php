@@ -7,7 +7,7 @@
 
 ?>
 
-<button class="navbar-toggler"
+<button class="navbar-toggler pe-4"
         type="button"
         data-bs-toggle="collapse"
         data-bs-target="#main-menu"

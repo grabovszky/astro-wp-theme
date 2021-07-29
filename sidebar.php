@@ -1,6 +1,6 @@
 <?php
 /**
- * WordPress custom sidebar template
+ * The template for displaying the sidebar.
  *
  * @package Astro
  */

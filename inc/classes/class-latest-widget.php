@@ -34,7 +34,7 @@ class Latest_Widget extends WP_Widget
         $expert_post_tag = get_term_by('slug', 'szakertoi_cikk', 'post_tag');
 
         $query_args = [
-            'tax_query' => [
+            'tax_query'      => [
                 [
                     'taxonomy' => $expert_post_tag->taxonomy,
                     'filed'    => 'term_id',
@@ -48,12 +48,15 @@ class Latest_Widget extends WP_Widget
 
         ?>
         <div class="widget widget_latest">
-            <h4 class="text-bigger text-blue text-bold"
-                onclick="location.href='<?php echo get_tag_link($expert_post_tag->term_id); ?>'"><?php echo esc_html__(
-                    'Our Expert posts',
-                    'astro'
-                ); ?></h4>
-            <ul class="">
+            <a href="<?php echo get_tag_link($expert_post_tag->term_id); ?>" class="text-decoration-none">
+                <h4 class="text-bigger text-blue text-bold">
+                    <?php echo esc_html__(
+                        'Our Expert posts',
+                        'astro'
+                    ); ?>
+                </h4>
+            </a>
+            <ul>
                 <?php
 
                 while ($query->have_posts()) {
@@ -61,11 +64,13 @@ class Latest_Widget extends WP_Widget
 
                     ?>
 
-                    <li onclick="location.href='<?php the_permalink(); ?>'" class="latest-post-item">
-                        <hr/>
-                        <img src="<?php the_post_thumbnail_url(); ?>"
-                             alt="">
-                        <h6 class="text-bigger text-blue text-medium"><?php echo get_the_title(); ?></h6>
+                    <li class="latest-post-item">
+                        <a href="<?php the_permalink(); ?>" class="text-decoration-none">
+                            <hr/>
+                            <img src="<?php the_post_thumbnail_url(); ?>"
+                                 alt="">
+                            <h6 class="text-bigger text-blue text-medium"><?php echo get_the_title(); ?></h6>
+                        </a>
                     </li>
 
                     <?php
@@ -74,12 +79,11 @@ class Latest_Widget extends WP_Widget
                 wp_reset_postdata();
                 ?>
             </ul>
-            <button class="button button-secondary"
-                    onclick="location.href='<?php echo get_tag_link($expert_post_tag->term_id); ?>'">
+            <a href="<?php echo get_tag_link($expert_post_tag->term_id); ?>" class="button mt-3 button-secondary">
                 <?php echo esc_html__(
                     'Show more',
                     'astro'
-                ); ?></button>
+                ); ?></a>
         </div>
         <?php
     }

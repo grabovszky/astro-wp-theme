@@ -1,6 +1,6 @@
 <?php
 /**
- * Template for the category page
+ * Template for the search results
  *
  * @package Astro
  */
@@ -14,10 +14,9 @@
             <div class="d-flex flex-column justify-content-center">
                 <h1 class="page-title text-h3 text-bold text-blue my-3">
                     <?php
-                    echo $wp_query->found_posts . ' ' . esc_html__('results for: ', 'astro');
-                    echo '"';
-                    the_search_query();
-                    echo '"';
+                    echo $wp_query->found_posts . ' ' .
+                         esc_html__('results for: ', 'astro') . '"' .
+                         get_search_query() . '"';
                     ?>
                 </h1>
             </div>
@@ -32,9 +31,26 @@
                 endwhile;
 
                 astro_taxonomy_pagination();
+            } else {
+                ?>
+                <h3 class="mt-5 text-center text-blue"><?php echo esc_html__(
+                        'Sorry no posts were found!',
+                        'astro'
+                    ); ?>
+                </h3>
+                <p class="text-center text-blue"><?php echo esc_html__(
+                        'Here is a cute robot to cheer you up:',
+                        'astro'
+                    ); ?>
+                </p>
+                <img src="<?php echo IMG_URI . '/illustration/ugyintezes-drawing.svg' ?>" alt=""
+                     class="p-5 img-fluid cute-robot" width="50%">
+                <a href="javascript:history.back()" class="ms-auto button button-secondary">
+                    <?php echo esc_html__('Go back', 'astro') ?>
+                </a>
+                <?php
             }
             ?>
         </ul>
-
     </div>
 </div>
